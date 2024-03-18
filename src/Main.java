@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,6 +26,15 @@ public class Main {
         }
 
         zygmunt.bierzUdzialWSzybkiej20();
+
+        ArrayList<PilnyUczen> pilniUczniowie = new ArrayList<>();
+        pilniUczniowie.add(zygmunt);
+        pilniUczniowie.add(filip);
+        zygmunt.uczSie();
+        zygmunt.uczSie();
+        Collections.sort(pilniUczniowie);
+        System.out.println(pilniUczniowie);
+
 
 
 

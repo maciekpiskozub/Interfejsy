@@ -2,6 +2,14 @@ public class PilnyUczen implements Uczen, Comparable<PilnyUczen> {
 
 
     private int punktyNauki = 0;
+
+    @Override
+    public String toString() {
+        return "PilnyUczen{" +
+                "punktyNauki=" + punktyNauki +
+                '}';
+    }
+
     @Override
     public void uczSie() {
         System.out.println("Ucze sie pilnie");
